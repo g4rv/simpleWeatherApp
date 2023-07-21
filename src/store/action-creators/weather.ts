@@ -1,8 +1,8 @@
 import { Dispatch } from 'redux';
-import { WeatherAction, WeatherActionTypes, WeatherType } from './types';
 import axios from 'axios';
+import { WeatherAction, WeatherActionTypes, WeatherType } from '@/types/weather';
 
-export const fetchWeather = (location = 'london') => {
+export const fetchWeather = (location = 'paris') => {
 
 	const URL = `https://api.weatherapi.com/v1/forecast.json?key=4427dfaf9ef64da58a3121536233004&q=${location}&days=3&aqi=yes&alerts=no`;
 
@@ -17,7 +17,7 @@ export const fetchWeather = (location = 'london') => {
 		} catch (err) {
 			dispatch({
 				type: WeatherActionTypes.FETCH_WEATHER_ERROR,
-				payload: `There was an error during fetching data`,
+				payload: `There was an error during retrieving weather data`,
 			});
 		}
 	};

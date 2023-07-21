@@ -1,7 +1,8 @@
-import { WeatherAction, WeatherActionTypes, WeatherState } from './types';
+import { WeatherAction, WeatherActionTypes, WeatherState } from "@/types/weather";
+
 
 const initialState: WeatherState = {
-	weatherData: {},
+	weatherData: null,
 	loading: false,
 	error: null,
 };
