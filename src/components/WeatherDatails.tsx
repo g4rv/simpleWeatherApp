@@ -40,7 +40,6 @@ const WeatherDetails = () => {
 		unitsType === 'metric' ? current.wind_kph : current.wind_mph;
 	const windSpeedUnits = unitsType === 'metric' ? 'km' : 'm';
 
-	const windDirection = current.wind_dir;
 	const windDegree = current.wind_degree;
 
 	const rainChange = forecastDay.day.daily_chance_of_rain;
