@@ -36,7 +36,7 @@ const App = () => {
 	};
 
 	return (
-		<main className=" relative container mx-auto h-full  bg-cyan-500 bg-[url('./bg2.jpg')] before:absolute before:inset-0 before:-z-[1] before:bg-gray-700/30 bg-no-repeat bg-cover lg:grid lg:grid-cols-[1fr_0.5fr] isolate">
+		<main className=" relative container mx-auto h-full bg-cyan-500 bg-[url('../bg2.jpg')] before:absolute before:inset-0 before:-z-[1] before:bg-gray-700/30 bg-no-repeat bg-cover lg:grid lg:grid-cols-[1fr_0.5fr] isolate">
 			<div className="relative grid h-full grid-rows-[max-content_1fr_max-content]">
 				<button
 					onClick={handleToggleUnitsType}
