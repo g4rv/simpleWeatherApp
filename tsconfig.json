@@ -23,6 +23,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  "include": ["src", "src/redux/weatherSlice/types.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
